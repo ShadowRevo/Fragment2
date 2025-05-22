@@ -17,7 +17,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class MainActivity extends AppCompatActivity {
-    public static FrameLayout FrHome,FrFirst,FrSecond;
+    public static FrameLayout FrHome,FrFirst, FrSecond;
     private BottomNavigationView Nav1;
     private HomeFrag HomeFrag;
     private FirstFrag FirstFrag;
