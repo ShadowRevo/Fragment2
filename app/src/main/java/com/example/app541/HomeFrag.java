@@ -20,10 +20,6 @@ public class HomeFrag extends Fragment {
     public HomeFrag() {
         // Required empty public constructor
     }
-
-
-
-
     @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
