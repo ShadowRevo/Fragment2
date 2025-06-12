@@ -40,7 +40,7 @@ public class HomeFrag extends Fragment {
 
         return view;
     }
-
+//
     public void CheckUser(View view) {
 
     }
