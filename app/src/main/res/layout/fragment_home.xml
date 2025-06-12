@@ -16,5 +16,29 @@
         android:text="Home Fragment"
         android:textColor="@color/white"
         android:background="@color/blue"/>
+    <EditText
+        android:id="@+id/User"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="UserName"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="150dp"/>
+
+    <EditText
+        android:id="@+id/Pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="230dp"
+        android:hint="Password" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogIn"
+        android:layout_marginTop="300dp"
+        android:layout_marginLeft="170dp"
+        android:onClick="CheckUser"/>
+
 
 </FrameLayout>

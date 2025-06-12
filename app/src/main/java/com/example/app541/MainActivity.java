@@ -1,10 +1,11 @@
 package com.example.app541;
 import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
-
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,7 +13,6 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
         HomeFrag=new HomeFrag();
         FirstFrag=new FirstFrag();
         SecondFrag=new SecondFrag();
-        getSupportFragmentManager().beginTransaction().replace(R.id.Frame1,HomeFrag);
-        getSupportFragmentManager().beginTransaction().replace(R.id.Frame2,FirstFrag);
-        getSupportFragmentManager().beginTransaction().replace(R.id.Frame3,SecondFrag );
+        getSupportFragmentManager().beginTransaction().replace(R.id.Frame1,HomeFrag).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.Frame2,FirstFrag).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.Frame3,SecondFrag ).commit();
         Nav1=findViewById(R.id.Nav);
         Nav1.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
                 return false;
             }
         });
-
     }
 
 }
